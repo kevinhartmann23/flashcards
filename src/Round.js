@@ -24,7 +24,8 @@ class Round {
   }
 
   calculatePercentCorrect() {
-    return Math.floor((this.turnCount - this.incorrectGuesses.length) / this.turnCount * 100);
+    return Math.floor(
+      (this.turnCount - this.incorrectGuesses.length) / this.turnCount * 100);
   }
 
   endRound() {
