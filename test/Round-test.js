@@ -60,7 +60,7 @@ describe('Round', () => {
   it('should create a new instance of Turn class', () => {
 
     expect(round1.takeTurn('object')).to.equal('correct!');
-    round2 = new Round(deck);
+    let round2 = new Round(deck);
     expect(round2.takeTurn('array')).to.equal('incorrect!')
   });
 
