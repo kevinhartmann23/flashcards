@@ -7,6 +7,7 @@ const Round = require('../src/Round');
 
 class Game {
   constructor() {
+    this.questions = prototypeQuestions;
     this.currentRound = undefined;
   }
 
