@@ -57,11 +57,18 @@ describe('Round', () => {
     expect(round1.takeTurn).to.be.a('function');
   });
 
+  it('should change to the next card after turn', () => {
+
+    expect(round1.takeTurn('object')).to.equal("correct!");
+    expect(round1.incorrectGuesses).to.deep.equal([]);
+    expect(round1.turnCount).to.equal(1);
+    expect(round1.returnCurrentCard()).to.equal(card2);
+  });
+
   it('should create a new instance of Turn class', () => {
 
     expect(round1.takeTurn('object')).to.equal('correct!');
-    let round2 = new Round(deck);
-    expect(round2.takeTurn('array')).to.equal('incorrect!')
+    expect(round1.takeTurn('function')).to.equal('incorrect!');
   });
 
   it('should store any incorrect answers by unique id', () => {
@@ -82,14 +89,6 @@ describe('Round', () => {
     expect(round1.turnCount).to.equal(3);
   });
 
-  it('should change to the next card after turn', () => {
-
-    expect(round1.takeTurn('object')).to.equal("correct!");
-    expect(round1.incorrectGuesses).to.deep.equal([]);
-    expect(round1.turnCount).to.equal(1);
-    expect(round1.returnCurrentCard()).to.equal(card2);
-  });
-
   it('should calculate the percent of correct answers', () => {
 
     round1.takeTurn('object');
@@ -107,7 +106,9 @@ describe('Round', () => {
 
     round1.calculatePercentCorrect();
 
-    expect(round1.endRound()).to.equal('**Round over!** You answered 33% of the questions correctly!')
+    expect(round1.endRound()).to.equal(
+      '**Round over!** You answered 33% of the questions correctly!'
+    )
   });
 
 })
