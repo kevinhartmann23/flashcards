@@ -1,10 +1,27 @@
-# FlashCards Starter Kit
+# 📝 Terminal FlashCards 📝
+### Turing School - Mod2 Solo Project
 
-## Fork This Repo
+### Contributors
+**Kevin Hartmann 2010FE**
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Instructions](#instructions)
+3. [How-To](#Live-Action...Get-your-quiz-on!)
+4. [Challenges & Wins](#challenges-&-wins)
+5. [Appreciation](#appreciation)
+
+## Introduction
+  The task was to build a program to simulate a set of flashCards through the command line in your terminal. You should be greeted by a welcome message, shown the number of cards in the deck, and be prompted with your first question! Please follow the [instructions](#instructions) below on how to begin!
+
+
+## Instructions
+
+#### 1. Fork This Repo
 
 On the top right corner of this page, click the **Fork** button.
 
-## Setup
+#### 2. Setup
 
 Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
 
@@ -18,26 +35,10 @@ Once you have cloned the repo, change into the directory and install the library
 npm install
 ```
 
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
+Running `node index.js` will get you started on your first of many questions!
+**Good Luck!**
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
-
-```bash
-Node server running on port 3000
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
-
-
-## Where to Add Your Code
-
-### JavaScript
-
-**Create all of your feature code files in the `src` directory.**
-
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
+## Live Action - Get your quiz on!
 
 Once you are working through Iteration 3, you will want to start your server to test your functionality.
 In the terminal, run:
@@ -46,34 +47,35 @@ In the terminal, run:
 node index.js
 ```
 
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
+When the game has started, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
 
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
+![flash cards example gif](https://media.giphy.com/media/ZBl76qKPbtq767rv09/giphy.gif)
 
----
+You can entire your answer by using the arrow keys or entering the number, the pressing enter!
 
-## Test Files Organization
+You will then be alerted if our answer was correct or incorrect. To move to the next question, simply press enter again!
 
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
+Enjoy!
 
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
+## Project Goals & Objectives
 
-## Running Your Tests
+- Contribute code to an partially constructed object-oriented application
+- Follow spec/prompts to make a working application
+- Implement ES6 classes
+- Write modular, reusable code that follows SRP (Single Responsibility Principle)
+- Implement a robust testing suite using TDD
 
-Run your test suite using the command:
+## Challenges & Wins
 
-```bash
-npm test
-```
+### Challenges
 
-The test results will output to the terminal.
+- At first I struggled with the concept of testing, I wanted to test each line individually. After a little bit of productive struggle I found it was best to test each method with their outcomes. Rather building certain tests that may initial pass and the fail later on as the method has since been modified to pass the following tests!
 
----
+### Wins
 
-## Linting Your Code
+- I dove right into this project! When it was introduced I was a little overwhelmed, but I jumped in and everything started falling into place! I feel really great with the outcome
+- Completing a few extensions... TBD ~~~~~~
 
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
+[Back to Top of Page](#contributors)
 
 ---
