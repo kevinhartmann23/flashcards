@@ -1,27 +1,27 @@
 class Turn {
-  constructor(userGuess, card){
+  constructor(userGuess, card) {
     this.userGuess = userGuess;
     this.card = card;
   }
 
-  returnGuess(){
+  returnGuess() {
     return this.userGuess;
   }
 
-  returnCard(){
+  returnCard() {
     return this.card;
   }
 
-  evaluateGuess(){
-    if(this.userGuess === this.card.correctAnswer){
+  evaluateGuess() {
+    if (this.userGuess === this.card.correctAnswer) {
       return true;
     } else {
       return false;
     }
   }
 
-  giveFeedback(){
-    if(this.evaluateGuess() === true){
+  giveFeedback() {
+    if (this.evaluateGuess() === true) {
       return 'correct!'
     } else {
       return 'incorrect!'
