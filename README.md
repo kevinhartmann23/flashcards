@@ -70,11 +70,12 @@ Enjoy!
 ### Challenges
 
 - At first I struggled with the concept of testing, I wanted to test each line individually. After a little bit of productive struggle I found it was best to test each method with their outcomes. Rather building certain tests that may initial pass and the fail later on as the method has since been modified to pass the following tests!
+- Atempting to add a second data file, and get the second set of flashcards to run with inquirer. I did a lot of research but it was a little too much to learn and apply for one day.
 
 ### Wins
 
 - I dove right into this project! When it was introduced I was a little overwhelmed, but I jumped in and everything started falling into place! I feel really great with the outcome
-- Completing a few extensions... TBD ~~~~~~
+- Following my project board on github throughout the project!
 
 [Back to Top of Page](#contributors)
 
